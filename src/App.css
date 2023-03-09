@@ -2,37 +2,72 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  position: absolute;
+  left: 35%;
+  width: 30%;
+  font-size: 2.9em;
+  color: dodgerblue;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#health { 
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  width: 30%;
+}
+
+.player {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.gun {
   display: flex;
-  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  right: 20%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bullet {
+  top: 40%;
+  z-index: 1000;
+  position: absolute;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bullet-triangle {
+  display: block;
+  width: 0; 
+  height: 0; 
+  border-top: 22px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right: 20px solid goldenrod; 
+  float: left;
+}
+
+.bullet-body {
+  font-weight: bold;
+  float: left;
+  width: 50px;
+  height: 40px;
+  border: 1px solid goldenrod;
+  display: inline-grid;
+  align-items: center;
+  background-color: goldenrod;
+  text-align: center;
 }
